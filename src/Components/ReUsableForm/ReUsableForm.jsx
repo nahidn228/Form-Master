@@ -13,11 +13,10 @@ const ReUsableForm = ({
     };
     handleSubmit(data);
   };
-
   return (
-    <div>
-      <h1 className="text-xl font-semibold mb-6">{formTitle}</h1>
-      <form onSubmit={handleLocalSubmit}>
+    <div className="space-y-2">
+      <h2 className="font-medium text-xl"> {formTitle} </h2>
+      <form onSubmit={handleLocalSubmit} className="space-y-2">
         <input
           type="text"
           name="name"
